@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿class Invoice
+{
+    // declaring variables
+    private string partNumber;
+    private string partDescription;
+    private int quantity;
+    private decimal price;
+
+    
+}
