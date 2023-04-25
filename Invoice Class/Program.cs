@@ -6,6 +6,16 @@
     private int quantity;
     private decimal price;
 
+    // constructor
+    public Invoice(string partNumber, string partDescription, int quantity, decimal price)
+    {
+        PartNumber = partNumber;
+        PartDescription = partDescription;
+        Quantity = quantity;
+        Price = price;
+    }
+
+
     // properties
     public string PartNumber
     {
@@ -42,4 +52,11 @@
             }
         }
     }
+    
+    // GetInvoiceAmount method
+    public decimal GetInvoiceAmount()
+    {
+        return Quantity * Price;
+    }
 }
+// end of Invoice class
